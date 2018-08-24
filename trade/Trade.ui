@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>878</width>
-    <height>748</height>
+    <height>605</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -411,29 +411,6 @@
        <string>상태</string>
       </property>
      </column>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_8">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>560</y>
-      <width>861</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>진행 상황</string>
-    </property>
-    <widget class="QListWidget" name="listWidget">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>851</width>
-       <height>111</height>
-      </rect>
-     </property>
     </widget>
    </widget>
   </widget>

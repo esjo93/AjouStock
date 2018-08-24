@@ -139,11 +139,11 @@ class AjouStock(QMainWindow, form_class):
 # buy list, sell list 읽기 ----------------------------------------------------------------
     # buy_list.txt와 sell_list.txt 읽는 함수
     def load_buy_sell_list(self):
-        f = open(os.path.join(settings.BASE_DIR, "data/list/buy_list.txt"), 'rt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/buy_list.txt"), 'rt')
         buy_list = f.readlines()
         f.close()
 
-        f = open(os.path.join(settings.BASE_DIR, "data/list/sell_list.txt"), 'rt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/sell_list.txt"), 'rt')
         sell_list = f.readlines()
         f.close()
 
@@ -179,11 +179,11 @@ class AjouStock(QMainWindow, form_class):
     def trade_stocks(self):
         hoga_lookup = {'limits': "00", 'market': "03"}
 
-        f = open(os.path.join(settings.BASE_DIR, "data/list/buy_list.txt"), 'rt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/buy_list.txt"), 'rt')
         buy_list = f.readlines()
         f.close()
 
-        f = open(os.path.join(settings.BASE_DIR, "data/list/sell_list.txt"), 'rt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/sell_list.txt"), 'rt')
         sell_list = f.readlines()
         f.close()
 
@@ -215,7 +215,7 @@ class AjouStock(QMainWindow, form_class):
         for i, row_data in enumerate(buy_list):
             buy_list[i] = buy_list[i].replace("before", "complete")
 
-        f = open(os.path.join(settings.BASE_DIR, "data/list/buy_list.txt"), 'wt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/buy_list.txt"), 'wt')
         for row_data in buy_list:
             f.write(row_data)
         f.close()
@@ -223,7 +223,7 @@ class AjouStock(QMainWindow, form_class):
         for i, row_data in enumerate(sell_list):
             sell_list[i] = sell_list[i].replace("before", "complete")
 
-        f = open(os.path.join(settings.BASE_DIR, "data/list/sell_list.txt"), 'wt')
+        f = open(os.path.join(settings.PREP_DIR, "data/list/sell_list.txt"), 'wt')
         for row_data in sell_list:
             f.write(row_data)
         f.close()
