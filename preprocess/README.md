@@ -10,8 +10,8 @@
 
 ## Development Environment
 - Windows 10 64bit
-- Python 3.6
-- Anaconda 32bit
+- Python 3.6.5 64 bit (for preprocess)
+- Anaconda 32 bit (for trade)
 - 키움증권 Open API+
 
 ## Requirements
